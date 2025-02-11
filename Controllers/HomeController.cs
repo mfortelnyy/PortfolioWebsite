@@ -1,20 +1,39 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using PortoflioWebsite.Models;
+using PortfolioWebsite.Models;
+using PortfolioWebsite.Services;
 
-namespace PortoflioWebsite.Controllers;
+namespace PortfolioWebsite.Controllers;
 
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
+    private readonly VisitorLogService _visitorLogService;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ILogger<HomeController> logger, VisitorLogService visitorLogService)
     {
         _logger = logger;
+        _visitorLogService = visitorLogService;
     }
 
-    public IActionResult Index()
+    public async Task<IActionResult> Index()
     {
+        var ipAddress = HttpContext.Connection.RemoteIpAddress?.ToString();
+        var userAgent = Request.Headers["User-Agent"].ToString();
+        var referrer = Request.Headers["Referer"].ToString();
+        var sessionId = HttpContext.Session.Id;
+
+        var visitorLog = new VisitorLog
+        {
+            IPAddress = ipAddress ?? "Unknown",
+            UserAgent = userAgent,
+            Referrer = referrer ?? "Direct Access",
+            SessionId = sessionId,
+            VisitTime = DateTime.UtcNow
+        };
+
+        await _visitorLogService.LogVisitorAsync(visitorLog);
+
         return View();
     }
 

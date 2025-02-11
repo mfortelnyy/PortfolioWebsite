@@ -1,8 +1,8 @@
 {
   "Files": [
     {
-      "Id": "/Users/maksym/Documents/GitHub/PortoflioWebsite/obj/Debug/net8.0/scopedcss/projectbundle/PortoflioWebsite.bundle.scp.css",
-      "PackagePath": "staticwebassets/PortoflioWebsite.bundle.scp.css"
+      "Id": "/Users/maksym/Documents/GitHub/PortoflioWebsite/obj/Debug/net8.0/scopedcss/projectbundle/PortfolioWebsite.bundle.scp.css",
+      "PackagePath": "staticwebassets/PortfolioWebsite.bundle.scp.css"
     },
     {
       "Id": "/Users/maksym/Documents/GitHub/PortoflioWebsite/wwwroot/css/site.css",
@@ -245,20 +245,20 @@
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
     },
     {
-      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.PortoflioWebsite.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.PortfolioWebsite.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.PortoflioWebsite.props",
-      "PackagePath": "build\\PortoflioWebsite.props"
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.PortfolioWebsite.props",
+      "PackagePath": "build\\PortfolioWebsite.props"
     },
     {
-      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.PortoflioWebsite.props",
-      "PackagePath": "buildMultiTargeting\\PortoflioWebsite.props"
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.PortfolioWebsite.props",
+      "PackagePath": "buildMultiTargeting\\PortfolioWebsite.props"
     },
     {
-      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.PortoflioWebsite.props",
-      "PackagePath": "buildTransitive\\PortoflioWebsite.props"
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.PortfolioWebsite.props",
+      "PackagePath": "buildTransitive\\PortfolioWebsite.props"
     }
   ],
   "ElementsToRemove": []

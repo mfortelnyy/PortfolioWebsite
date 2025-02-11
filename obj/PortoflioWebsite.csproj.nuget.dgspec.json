@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/maksym/Documents/GitHub/PortoflioWebsite/PortoflioWebsite.csproj": {}
+    "/Users/maksym/Documents/GitHub/PortfolioWebsite/PortfolioWebsite.csproj": {}
   },
   "projects": {
-    "/Users/maksym/Documents/GitHub/PortoflioWebsite/PortoflioWebsite.csproj": {
+    "/Users/maksym/Documents/GitHub/PortfolioWebsite/PortfolioWebsite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/maksym/Documents/GitHub/PortoflioWebsite/PortoflioWebsite.csproj",
-        "projectName": "PortoflioWebsite",
-        "projectPath": "/Users/maksym/Documents/GitHub/PortoflioWebsite/PortoflioWebsite.csproj",
+        "projectUniqueName": "/Users/maksym/Documents/GitHub/PortfolioWebsite/PortfolioWebsite.csproj",
+        "projectName": "PortfolioWebsite",
+        "projectPath": "/Users/maksym/Documents/GitHub/PortfolioWebsite/PortfolioWebsite.csproj",
         "packagesPath": "/Users/maksym/.nuget/packages/",
-        "outputPath": "/Users/maksym/Documents/GitHub/PortoflioWebsite/obj/",
+        "outputPath": "/Users/maksym/Documents/GitHub/PortfolioWebsite/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/maksym/.nuget/NuGet/NuGet.Config"
@@ -42,6 +42,22 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
