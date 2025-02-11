@@ -32,6 +32,36 @@
         @RenderBody()
     </div>
 
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="position-fixed bottom-0 start-50 translate-middle-x p-3 bg-dark text-white shadow-lg rounded" style="width: 90%; max-width: 400px; display: none;">
+        <p class="mb-2">This website uses cookies to enhance your experience. By continuing, you agree to our 
+            <a href="/Privacy" class="text-info">Privacy Policy</a>.
+        </p>
+        <div class="text-end">
+            <button class="btn btn-primary btn-sm" onclick="acceptCookies()">Accept</button>
+        </div>
+    </div>
+
+    <!-- Cookie Consent Script -->
+    <script>
+        function getCookie(name) {
+            let match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+            return match ? match[2] : null;
+        }
+
+        function acceptCookies() {
+            document.cookie = "cookieConsent=true; path=/; max-age=" + (60 * 60 * 24 * 365);
+            document.getElementById("cookieConsent").style.display = "none";
+        }
+
+        // Show banner only if consent is not given
+        window.onload = function () {
+            if (!getCookie("cookieConsent")) {
+                document.getElementById("cookieConsent").style.display = "block";
+            }
+        };
+    </script>
+
     <footer class="bg-dark text-light text-center py-3 mt-5">
         &copy; @DateTime.Now.Year Maksym Fortelnyy | Built with .NET Core MVC
     </footer>
