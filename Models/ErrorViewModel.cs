@@ -1,4 +1,4 @@
-namespace PortoflioWebsite.Models;
+namespace PortfolioWebsite.Models;
 
 public class ErrorViewModel
 {
