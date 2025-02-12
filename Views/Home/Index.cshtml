@@ -2,8 +2,126 @@
     ViewData["Title"] = "Home";
 }
 
-<div class="text-center mt-5">
-    <h1 class="display-4">Welcome to My Portfolio</h1>
-    <p class="lead">Software Engineer | .NET Developer | Full-Stack Enthusiast</p>
-    <a href="/Projects" class="btn btn-primary btn-lg">View My Projects</a>
+<div class="container mt-5 text-center">
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1 class="fw-bold">Maksym Fortelnyy</h1>
+        <h4 class="text-muted">Software Engineer | .NET Developer | Full-Stack Enthusiast</h4>
+        <p class="mt-3">Building scalable applications with .NET, Java, Python, and cloud technologies.</p>
+        <a href="mailto:mfortelnyy1@gmail.com" class="btn btn-primary btn-lg">Contact Me</a>
+    </div>
+
+    <!-- About Me -->
+    <section class="about mt-5">
+        <h2>About Me</h2>
+        <p class="lead">
+            I'm a passionate **Software Engineer** specializing in **.NET, Java, and Python**, with expertise in **web development, APIs, AI-powered applications, and cloud computing**.  
+            I've developed **fleet management systems, AI-driven video analysis tools, search engines, and music management platforms**.  
+            My focus is on creating scalable and high-performance applications.
+        </p>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills mt-5">
+        <h2>Skills</h2>
+        <div class="row mt-3">
+            <div class="col-md-4">
+                <h5>Technologies & Frameworks</h5>
+                <p>.NET (6, 8), ASP.NET Web API, Entity Framework Core, Jakarta EE, Flutter, Flask, Django</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Languages</h5>
+                <p>C#, Python, Java, SQL, JavaScript, Dart, Swift, Kotlin</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Cloud & DevOps</h5>
+                <p>Azure, AWS, GCP, Docker, CI/CD, GitHub Actions</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="projects mt-5">
+        <h2>Projects</h2>
+        <div class="row mt-3">
+            <!-- TruckCheck (Fleet Management) -->
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">TruckCheck (Fleet Management)</h5>
+                        <p class="card-text">
+                            A cross-platform fleet management system built with **.NET 8, Flutter, and AWS**.  
+                            Features **driver tracking, image uploads, FMCSA-compliant APIs**, and automated deployments.
+                        </p>
+                        <a href="https://truckcheck.org/" class="btn btn-outline-primary" target="_blank">View Project</a>
+                        <a href="https://github.com/mfortelnyy/truckPRO_api" class="btn btn-dark" target="_blank">GitHub (API)</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI Sports Analysis Tool -->
+            <div class="col-md-6 mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">AI-Powered Racket Sports Analysis</h5>
+                        <p class="card-text">
+                            Developed for IIT Athletics, this **AI-powered sports analysis tool** used **Flask, OpenAI, and Computer Vision**  
+                            to provide real-time coaching insights through match video analysis.
+                        </p>
+                        <!-- Placeholder for Image -->
+                        <img src="~/images/ai_sports_analysis.png" class="img-fluid rounded mt-2" alt="AI Sports Analysis Prototype">
+                        <p class="small text-muted mt-2">*Prototype Image from Development Phase*</p>
+
+                        <!-- Video (Optional) -->
+                        <video class="img-fluid mt-3" controls>
+                            <source src="~/videos/ai_sports_demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+
+                        <p class="small text-muted mt-2">*Demo Video of AI Analysis in Action*</p>
+                        
+                        <!-- Private Project Notice -->
+                        <p class="text-muted"><em>This was a private project for IIT Athletics and is not publicly accessible.</em></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Web Crawler & Search Engine -->
+            <div class="col-md-6 mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Crawler & Search Engine</h5>
+                        <p class="card-text">
+                            A **custom search engine** built with **Python, Scrapy, and Flask**, featuring  
+                            **advanced indexing, TF-IDF ranking, and NLP-based query processing**.
+                        </p>
+                        <a href="https://github.com/mfortelnyy/Gamayun" class="btn btn-outline-primary" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Music Management System -->
+            <div class="col-md-6 mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Music Management System</h5>
+                        <p class="card-text">
+                            A **Jakarta EE 10-based** role-based platform for artists, listeners, and admins.  
+                            Includes **secure authentication, playlist management, and MySQL database integration**.
+                        </p>
+                        <a href="https://github.com/mfortelnyy" class="btn btn-outline-primary" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact mt-5">
+        <h2>Contact</h2>
+        <p>Let's connect! Feel free to reach out via email or check out my GitHub.</p>
+        <a href="mailto:mfortelnyy1@gmail.com" class="btn btn-primary">Email Me</a>
+        <a href="https://github.com/mfortelnyy" class="btn btn-dark" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/maksym-fortelnyy-42406a194/" class="btn btn-info text-light" target="_blank">LinkedIn</a>
+    </section>
 </div>
