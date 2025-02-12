@@ -19,7 +19,25 @@ namespace PortfolioWebsite.Services
 
         public async Task LogVisitorAsync(VisitorLog log)
         {
-            _context.VisitorLogs.Add(log);
+            var existingVisitor = await _context.VisitorLogs
+                .FirstOrDefaultAsync(v => v.IPAddress == log.IPAddress);
+            
+            // Update existing visitor log
+            if (existingVisitor != null)
+            {
+                existingVisitor.LastSeen = DateTime.UtcNow;
+                existingVisitor.VisitCount += 1;
+            }
+            // New visitor
+            else
+            {
+                log.FirstVisit = DateTime.UtcNow;
+                log.LastSeen = log.FirstVisit;
+                log.VisitCount = 1;
+
+                _context.VisitorLogs.Add(log);
+            }
+
             await _context.SaveChangesAsync();
         }
     }

@@ -28,8 +28,7 @@ public class HomeController : Controller
             IPAddress = ipAddress ?? "Unknown",
             UserAgent = userAgent,
             Referrer = referrer ?? "Direct Access",
-            SessionId = sessionId,
-            VisitTime = DateTime.UtcNow
+            SessionId = sessionId
         };
 
         await _visitorLogService.LogVisitorAsync(visitorLog);

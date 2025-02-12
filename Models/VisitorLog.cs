@@ -12,6 +12,8 @@ namespace PortfolioWebsite.Models
         public string UserAgent { get; set; }
         public string Referrer { get; set; }
         public string SessionId { get; set; }
-        public DateTime VisitTime { get; set; }
+        public DateTime FirstVisit { get; set; } 
+        public DateTime LastSeen { get; set; } 
+        public int VisitCount { get; set; }=0;
     }
 }
