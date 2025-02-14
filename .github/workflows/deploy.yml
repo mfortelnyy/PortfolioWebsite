@@ -1,0 +1,33 @@
+name: Deploy Portfolio Website to Windows VPS
+
+on:
+  push:
+    branches:
+      - deployment 
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Run SSH Commands on VPS
+        uses: appleboy/ssh-action@v0.1.10
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.PORT }}
+          command_timeout: 30m            
+          script: |
+                    C:\Users\Administrator\Documents\portfolioRepo\deploy_script\deploy.bat
+
+  check:
+    runs-on: ubuntu-latest
+    needs: deploy
+    steps:
+    - name: Check if the batch file ran successfully
+      if: ${{ needs.deploy.outputs.exitcode == 0 }}
+      run: |
+          echo "Deployment script executed successfully"
