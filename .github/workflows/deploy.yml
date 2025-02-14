@@ -3,13 +3,13 @@ name: Deploy Portfolio Website to Windows VPS
 on:
   push:
     branches:
-      - deployment 
+      - deployment
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code
+      - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Run SSH Commands on VPS
@@ -21,7 +21,7 @@ jobs:
           port: ${{ secrets.PORT }}
           command_timeout: 30m            
           script: |
-                    C:\Users\Administrator\Documents\PortfolioWebsite\PortfolioWebsiteScript\deploy_portfolio.bat
+            C:\Users\Administrator\Documents\PortfolioWebsite\PortfolioWebsiteScript\deploy_portfolio.bat
 
   check:
     runs-on: ubuntu-latest
@@ -30,4 +30,4 @@ jobs:
     - name: Check if the batch file ran successfully
       if: ${{ needs.deploy.outputs.exitcode == 0 }}
       run: |
-          echo "Deployment script executed successfully"
+          echo "Check if the batch file ran successfully"
