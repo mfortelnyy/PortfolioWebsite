@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wfkTkDcVDnkhwMOkfwHI1vkdJuG2gkfSV/FdITcytdE=",
+  "Hash": "fqGv+CFlGkjxz35l5Mg9D85u52WTeC9L6j9zX1FlLYY=",
   "Source": "PortfolioWebsite",
   "BasePath": "_content/PortfolioWebsite",
   "Mode": "Default",
@@ -1193,6 +1193,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Identity": "/Users/maksym/Documents/GitHub/PortoflioWebsite/wwwroot/videos/ai_sports_demo.mp4",
+      "SourceId": "PortfolioWebsite",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/maksym/Documents/GitHub/PortoflioWebsite/wwwroot/",
+      "BasePath": "_content/PortfolioWebsite",
+      "RelativePath": "videos/ai_sports_demo.mp4",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/videos/ai_sports_demo.mp4"
     }
   ]
 }
