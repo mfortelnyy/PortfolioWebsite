@@ -21,7 +21,7 @@ jobs:
           port: ${{ secrets.PORT }}
           command_timeout: 30m            
           script: |
-                    C:\Users\Administrator\Documents\portfolioRepo\deploy_script\deploy.bat
+                    C:\Users\Administrator\Documents\PortfolioWebsiteScript\deploy.bat
 
   check:
     runs-on: ubuntu-latest
