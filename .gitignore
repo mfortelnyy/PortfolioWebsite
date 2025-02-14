@@ -1,3 +1,8 @@
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 appsettings.json
+appsettings.*.json
+
+# Ignore all Debug & Release folders
+bin/
+obj/
