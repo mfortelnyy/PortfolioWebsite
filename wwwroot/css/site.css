@@ -59,18 +59,7 @@ footer {
   overflow: hidden;
 }
 
-/* Project Card Styling */
-.project-card {
-  background: #1e2a38;
-  padding: 25px;
-  border-radius: 10px;
-  text-align: center;
-  transition: transform 0.3s ease-in-out;
-}
 
-.project-card:hover {
-  transform: scale(1.05);
-}
 
 /* AI Project Image */
 .img-fluid {
@@ -104,13 +93,6 @@ footer {
   background: rgba(255, 255, 255, 0.2);  
 }
 
-/* Better spacing for columns */
-@media (min-width: 992px) {
-  .col-lg-4 {
-      padding: 15px;
-  }
-}
-
 /* Ensuring list items are styled properly */
 .skill-card ul {
   padding-left: 20px;
@@ -120,4 +102,46 @@ footer {
   list-style: none;
   padding: 5px 0;
   font-size: 1rem;
+}
+
+/* Project Card Styling */
+.project-card {
+  background: #1e2a38;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures buttons stay at the bottom */
+}
+
+/* Project Card Hover Effect */
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+/* Image Styling */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Button Spacing */
+.mt-auto {
+  margin-top: auto;
+}
+
+/* Video Styling */
+.video-container {
+  margin-top: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+@media (min-width: 992px) {
+  .col-lg-4 {
+      padding: 15px;
+  }
 }

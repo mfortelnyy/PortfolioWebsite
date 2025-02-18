@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/maksym/Documents/GitHub/PortoflioWebsite/wwwroot/images/huffman_encoding.png",
+      "PackagePath": "staticwebassets/images/huffman_encoding.png"
+    },
+    {
+      "Id": "/Users/maksym/Documents/GitHub/PortoflioWebsite/wwwroot/images/preview.jpeg",
+      "PackagePath": "staticwebassets/images/preview.jpeg"
+    },
+    {
       "Id": "/Users/maksym/Documents/GitHub/PortoflioWebsite/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },
