@@ -140,11 +140,15 @@ footer {
   overflow: hidden;
 }
 
-/* Full-Screen Image Modal */
-#imageModal img {
-  max-width: 100%;
+/* Custom modal size */
+.modal-lg {
+  max-width: 90vw;
+}
+
+.modal-body img {
+  width: 100%;
   height: auto;
-  border-radius: 10px;
+  max-height: 80vh;
 }
 
 @media (min-width: 992px) {
