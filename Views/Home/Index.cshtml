@@ -152,9 +152,14 @@
                     <li>Developed for <strong>IIT Athletics</strong> for advanced player movement tracking.</li>
                     <li>Built using <strong>Flask, OpenAI API, Computer Vision</strong>.</li>
                 </ul>
-                <img src="~/images/ai_sports_analysis.png" class="img-fluid rounded mt-2 mb-3" alt="AI Sports Analysis Screenshot">
+                <!-- Image with click event to open modal -->
+                <img src="~/images/ai_sports_analysis.png" 
+                     class="img-fluid rounded mt-2 mb-3"
+                     alt="AI Sports Analysis Screenshot"
+                     data-bs-toggle="modal" 
+                     data-bs-target="#imageModal"
+                     onclick="setModalImage(this)">
                 <p class="small text-muted mt-2">Prototype Image from Development Phase</p>
-
                 <!-- Video Demo -->
                 <div class="video-container">
                     <video controls class="w-100 rounded mt-3">
@@ -204,12 +209,32 @@
                     <li>Built <strong>Huffman Tree Construction</strong> using Priority Queues.</li>
                     <li>Optimized data compression efficiency while maintaining lossless compression.</li>
                 </ul>
-                <img src="~/images/huffman_encoding.png" class="img-fluid rounded mt-2 mb-3" alt="Huffman Encoding Screenshot">
+                <!-- Image with click event to open modal -->
+                <img src="~/images/huffman_encoding.png" 
+                     class="img-fluid rounded mt-2 mb-3"
+                     alt="Huffman Encoding Screenshot"
+                     data-bs-toggle="modal" 
+                     data-bs-target="#imageModal"
+                     onclick="setModalImage(this)">
                 <a href="https://github.com/mfortelnyy/HuffmanEnDeCode/tree/main" class="btn btn-outline-light mt-auto">View on GitHub</a>
             </div>
         </div>
     </div>
 </section>
+
+<!-- Image Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">         <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="imageModalLabel">Image Preview</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img id="modalImage" class="img-fluid rounded" src="" alt="Full Size Image">
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Contact Section -->
 <section id="contact" class="contact py-5">
